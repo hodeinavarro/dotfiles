@@ -1,0 +1,19 @@
+syntax: glob
+*.pyc
+*.pyo
+*.orig
+*.jasper
+node_modules/
+build/
+dist/
+*.egg-info/
+*.egg/
+*.eggs/
+.review.cfg
+.tox/
+bower_components/
+*.rej
+*.bak
+locale/*.json
+*.coverage
+*-lock.json

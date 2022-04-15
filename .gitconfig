@@ -1,0 +1,20 @@
+[user]
+    email = hodei.navarro@outlook.com
+    name = Hodei Navarro
+[color]
+    ui = auto
+[core]
+    editor = code --wait --new-window
+    autocrlf = input
+    safecrlf = true
+    excludesfile = /Users/hodeinavarro/.gitignore.global
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --new-window --diff $LOCAL $REMOTE
+[pull]
+    rebase = true
+[alias]
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[push]
+    default = matching
