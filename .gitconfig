@@ -7,7 +7,7 @@
     editor = code --wait --new-window
     autocrlf = input
     safecrlf = true
-    excludesfile = /home/hodei/.gitignore.global
+    excludesfile = $HOME/.gitignore.global
 [diff]
     tool = default-difftool
 [difftool "default-difftool"]
