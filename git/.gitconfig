@@ -1,7 +1,7 @@
 [user]
 	name = Hodei Navarro
 	email = hodei.navarro@outlook.com
-	signingkey = 746E65CD5E735450
+	signingkey = 8C40F2E2
 
 [core]
 	editor = /usr/local/bin/code --new-window --wait
@@ -60,3 +60,5 @@
 
 [Include]
   path = "./.gitconfig.local"
+[tag]
+	gpgSign = true
