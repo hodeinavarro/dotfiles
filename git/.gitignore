@@ -1,0 +1,22 @@
+# VSCode
+**/.vscode
+
+# Python
+**/dist
+**/build/
+**/*.pyc
+**/*.egg-info/
+**/*.egg/
+**/*.eggs/
+**/.tox
+
+# Node
+**/node_modules/
+**/*-lock.json
+
+# Logs
+**/.coverage
+**/*.coverage
+
+# macOS
+**/.DS_Store

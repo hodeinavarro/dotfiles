@@ -1,0 +1,62 @@
+[user]
+	name = Hodei Navarro
+	email = hodei.navarro@outlook.com
+	signingkey = 746E65CD5E735450
+
+[core]
+	editor = /usr/local/bin/code --new-window --wait
+	excludesFile = /Users/hodeinavarro/.gitignore
+	trustctime = false
+	untrackedCache = true
+
+[diff]
+	tool = vscode
+
+[difftool "vscode"]
+	cmd = /usr/local/bin/code --new-window --wait --diff $LOCAL $REMOTE
+
+[diff "exif"]
+	textconv = exiftool
+
+[rebase]
+	updateRefs = true
+
+[pull]
+	rebase = true
+  	ff = only
+
+[push]
+	autoSetupRemote = true
+
+[branch]
+	sort = -committerdate
+
+[merge]
+	tool = vscode
+	ff = only
+	log = true
+
+[mergetool "vscode"]
+	cmd = /usr/local/bin/code --new-window --wait $MERGED
+
+[commit]
+	gpgSign = true
+
+[url "git@github.com:"]
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+  insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+  insteadOf = "gist:"
+
+[Include]
+  path = "./.gitconfig.local"
