@@ -49,4 +49,8 @@ export PATH="$(brew --prefix postgresql@16)/bin:$PATH"
 export LDFLAGS="-L/$(brew --prefix postgresql@16)/lib"
 export CPPFLAGS="-I/$(brew --prefix postgresql@16)/include"
 
+export GPG_TTY=$(tty)
+gpgconf --launch gpg-agent
+
 alias c="open $1 -a \"Visual Studio Code\""
+alias gcu="gfa && gbgD"
