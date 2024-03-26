@@ -1,5 +1,5 @@
 _update() {
-	local HOME_FILES=('.zshrc' '.p10k.zsh')
+	local HOME_FILES=('.zshrc' '.p10k.zsh' '.zshrc.aliases.public')
 
 	local dir=$(pwd)
 	for file in "${HOME_FILES[@]}"; do

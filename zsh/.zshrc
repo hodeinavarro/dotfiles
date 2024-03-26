@@ -52,5 +52,5 @@ export CPPFLAGS="-I/$(brew --prefix postgresql@16)/include"
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
-alias c="open $1 -a \"Visual Studio Code\""
-alias gcu="gfa && gbgD"
+[ -f ~/.zshrc.aliases.public ] && source ~/.zshrc.aliases.public
+[ -f ~/.zshrc.aliases.private ] && source ~/.zshrc.aliases.private
