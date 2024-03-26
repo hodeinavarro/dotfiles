@@ -48,9 +48,13 @@ export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 export PATH="$(brew --prefix postgresql@16)/bin:$PATH"
 export LDFLAGS="-L/$(brew --prefix postgresql@16)/lib"
 export CPPFLAGS="-I/$(brew --prefix postgresql@16)/include"
+export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix openssl)/lib/
+export PATH="$(brew --prefix openssl)/bin:$PATH"
 
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
+
+. "$HOME/.cargo/env"
 
 [ -f ~/.zshrc.aliases.public ] && source ~/.zshrc.aliases.public
 [ -f ~/.zshrc.aliases.private ] && source ~/.zshrc.aliases.private
