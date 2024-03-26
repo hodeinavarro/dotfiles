@@ -30,10 +30,12 @@ _update_darwin() {
 		'hiddenbar'
 		'stats'
 		'python@3.12'
+		'python@3.10'
 		'postgresql@16'
 		'gpg'
 		'htop'
 		'exiftool'
+		'jq'
 	)
 	local BREW_SERVICES=(
 		'postgresql@16'
