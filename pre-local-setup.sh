@@ -36,6 +36,11 @@ _update_darwin() {
 		'htop'
 		'exiftool'
 		'jq'
+		'bat'
+		'eza'
+		'watch'
+		'zlib'
+		'jpeg'
 	)
 	local BREW_SERVICES=(
 		'postgresql@16'

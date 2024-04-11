@@ -1,7 +1,7 @@
 [user]
 	name = Hodei Navarro
 	email = hodei.navarro@outlook.com
-	signingkey = 8C40F2E2
+	signingkey = 6B55FAA5FB4821EE
 
 [core]
 	editor = /usr/local/bin/code --new-window --wait
