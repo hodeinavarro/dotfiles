@@ -1,2 +1,3 @@
 alias c="open $1 -a \"Visual Studio Code\""
 alias gcu="gfa && gbgD"
+alias eza="eza --long --header --git --git-repos --octal-permissions --time-style relative --icons always --classify always --color-scale all --color-scale-mode gradient --group-directories-first --git-ignore --group --modified --accessed --created"

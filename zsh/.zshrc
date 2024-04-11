@@ -44,13 +44,21 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 export PATH="$(brew --prefix postgresql@16)/bin:$PATH"
-export LDFLAGS="-L/$(brew --prefix postgresql@16)/lib"
-export CPPFLAGS="-I/$(brew --prefix postgresql@16)/include"
+export LDFLAGS="-L$(brew --prefix postgresql@16)/lib:$LDFLAGS"
+export CPPFLAGS="-I$(brew --prefix postgresql@16)/include:$CPPFLAGS"
+
+export PATH="$(brew --prefix python)/libexec/bin:$PATH"
+
+export PATH="$(brew --prefix openssl)/bin:$PATH"
+export LIBRARY_PATH="$(brew --prefix openssl)/lib:$LIBRARY_PATH"
+
+export LDFLAGS="-L$(brew --prefix zlib)/lib:$LDFLAGS"
+export CPPFLAGS="-I$(brew --prefix zlib)/include:$CPPFLAGS"
 
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
 [ -f ~/.zshrc.aliases.public ] && source ~/.zshrc.aliases.public
 [ -f ~/.zshrc.aliases.private ] && source ~/.zshrc.aliases.private
+. "$HOME/.cargo/env"
