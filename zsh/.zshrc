@@ -56,6 +56,9 @@ export LIBRARY_PATH="$(brew --prefix openssl)/lib:$LIBRARY_PATH"
 export LDFLAGS="-L$(brew --prefix zlib)/lib:$LDFLAGS"
 export CPPFLAGS="-I$(brew --prefix zlib)/include:$CPPFLAGS"
 
+export LDFLAGS="-L$(brew --prefix jpeg)/lib:$LDFLAGS"
+export CPPFLAGS="-I$(brew --prefix jpeg)/include:$CPPFLAGS"
+
 export GPG_TTY=$(tty)
 gpgconf --launch gpg-agent
 
